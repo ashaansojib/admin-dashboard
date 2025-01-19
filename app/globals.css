@@ -4,23 +4,8 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   font-family: "Poppins", serif;
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /* dashboard sidebar css */
@@ -46,4 +31,8 @@ body {
 .dash-menu:hover .arrow-icon{
   rotate: 90deg;
   transition: all 0.5s;
+}
+/* dashboard header css */
+.search-box{
+  @apply px-2 py-1 rounded-md
 }
